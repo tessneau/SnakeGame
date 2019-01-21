@@ -1,31 +1,76 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto');
 
 h1 {
+  color: white;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  color: white;
   text-align: center;
 }
 
 body {
-  background-color: rgb(230, 204, 179);
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-
+  background-color: black;
+  font-family: 'Inconsolata', monospace;
 }
 
-#startBtn {
-  position: absolute;
-  top: 400px;
-  left: 45%;
-  width: 100px;
-  height: 40px;
+p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
   font-size: 10px;
+  text-align: center;
+}
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  width: 340px;
 }
 
 canvas {
-    top: 50%;
-    left: 50%
-		display: block;
-		margin: 0 auto;
+    display: none;
+    margin-top: 3rem;
 	}
+
+.score {
+  display: inline-block;
+  text-align: right;
+}
+
+#start_menu a, #gameover_menu a {
+  display: block;
+}
+
+#start_menu a:hover, #gameover_menu a {
+  cursor: pointer;
+}
+
+#start_menu a:hover::before, #gameover_menu a:hover::before {
+  content: ">";
+  margin-right: 10px;
+}
+
+#start_menu{
+  display: block;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#gameover_menu {
+  display: none;
+  width: 100px;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
